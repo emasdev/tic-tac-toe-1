@@ -51,7 +51,8 @@ describe Board do
 
   it 'return the reset board' do
     board = Board.new
-    expect(board.board).to eq (1..9).to_a
+    expected = (1..9).to_a
+    expect(board.board).to eq expected
     expect(board.game_status).to eq ''
   end
 end
