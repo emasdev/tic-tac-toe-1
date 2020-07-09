@@ -4,7 +4,8 @@ describe Board do
   context '#initialize' do
     it 'init board' do
       board = Board.new
-      expect(board.board).to eq (1..9).to_a
+      expected_board = (1..9).to_a
+      expect(board.board).to eq expected_board
       expect(board.game_status).to eq ''
     end
   end
